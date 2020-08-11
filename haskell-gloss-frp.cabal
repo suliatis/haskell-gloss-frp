@@ -1,0 +1,15 @@
+cabal-version:       >=1.10
+
+name:                haskell-gloss-frp
+version:             0.1.0.0
+license-file:        LICENSE
+author:              Attila Süli
+maintainer:          suli.zakar.attila@gmail.com
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+executable haskell-gloss-state
+  main-is:             Main.hs
+  other-modules:       Window, Player, Playground
+  build-depends:       base >=4.14 && <4.15, elerea, gloss, gloss-rendering, GLFW-b
+  default-language:    Haskell2010
